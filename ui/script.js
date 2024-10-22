@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() { 
     const progressBar = document.getElementById('progress');
     const percentageText = document.getElementById('percentage');
-    const targetWidth = 11.82; 
+    const targetWidth = 11.82; // Porcentaje de estudiantes afectados
+    let currentWidth = 0;
     
     function animateProgressBar() {
         if (currentWidth < targetWidth) {

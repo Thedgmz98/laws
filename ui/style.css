@@ -38,27 +38,29 @@ padding-left: 1%;
 
 
 
-.madre{
-    padding-top: 4%;
-    box-sizing: border-box;
+.madre {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Centra la tarjeta en el contenedor madre */
+    align-items: center;
+    height: 100vh; /* Hace que el contenedor ocupe el alto total de la ventana */
+color: black;
 }
 
-
-
-
 .card1 {
-    color: black;
-    background-color: #f9f9f9;
+    background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     max-width: 400px;
+    width: 100%; /* Hace que sea responsive */
     text-align: center;
 }
 
-
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
 
 .progress-container {
     background-color: #e0e0e0;
@@ -71,7 +73,7 @@ padding-left: 1%;
 .progress-bar {
     height: 100%;
     background-color: #76c7c0;
-    width: 0%; /* Esto puede cambiar dinámicamente */
+    width: 0%; /* Inicia en 0%, y se llenará con el JS */
     transition: width 0.5s ease;
 }
 

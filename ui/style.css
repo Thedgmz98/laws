@@ -427,3 +427,79 @@ footer {
     height: 10vh;
 
 }
+
+
+
+
+@media (max-width: 1024px) {
+    .banner {
+        height: 15vh;
+    }
+
+    .card5 {
+        width: 100%;
+    }
+
+    .btn1 {
+        flex-direction: column;
+    }
+
+    .lap {
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem;
+        margin-left: 3%;
+    }
+
+    .madre {
+        flex-direction: column;
+        align-items: center;
+        padding: 5%;
+    }
+
+    .pechi, .pepo, .ayuda {
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+    }
+
+    .grid {
+        gap: 1%;
+    }
+
+    .card, .card1, .card5, .card6 {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .lap {
+        width: 80%;
+        font-size: 0.9rem;
+    }
+
+    .card, .card1, .card5, .card6 {
+        width: 100%;
+    }
+
+    .madre, .btn1, .testi, .cnt {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .progress-bar {
+        height: 15px;
+    }
+
+    footer {
+        height: 15vh;
+    }
+}

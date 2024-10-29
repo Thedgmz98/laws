@@ -27,3 +27,21 @@ function abrirWhatsApp(){
     window.open(url, '_blank');
 }
 
+document.querySelectorAll('.options a').forEach((anchor, index) => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        // Asociar cada enlace de la barra de navegación con la clase de su sección correspondiente
+        const sectionClasses = ['banner', 'pepo', 'madre', 'testi' ,'padre'];
+        const targetClass = sectionClasses[index];
+        const targetSection = document.querySelector(`.${targetClass}`);
+
+        // Verificar si la sección existe y desplazar suavemente
+        if (targetSection) {
+            window.scrollTo({
+                top: targetSection.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    });
+});

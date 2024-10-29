@@ -1,19 +1,29 @@
 document.addEventListener('DOMContentLoaded', function() { 
     const progressBar = document.getElementById('progress');
     const percentageText = document.getElementById('percentage');
-    const targetWidth = 11.82; // Porcentaje de estudiantes afectados
+    const targetWidth = 40.82; 
     let currentWidth = 0;
     
     function animateProgressBar() {
         if (currentWidth < targetWidth) {
             currentWidth += 0.1;
             progressBar.style.width = currentWidth + '%';
-            percentageText.textContent = currentWidth.toFixed(1) + '%'; // Actualiza el texto del porcentaje
+            percentageText.textContent = currentWidth.toFixed(1) + '%'; 
             requestAnimationFrame(animateProgressBar);
         } else {
-            percentageText.textContent = targetWidth.toFixed(1) + '%'; // Asegurar que el texto llegue al porcentaje exacto
+            percentageText.textContent = targetWidth.toFixed(1) + '%'; 
         }
     }
     
     animateProgressBar();
 });
+
+
+
+function abrirWhatsApp(){
+    var numero = "+573173056377";
+    var mensaje = "Hola! Me gustaria recibir ayuda."; 
+    var url = "https://api.whatsapp.com/send?phone=" + numero + "&text=" + encodeURIComponent(mensaje);
+    window.open(url, '_blank');
+}
+

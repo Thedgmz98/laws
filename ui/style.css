@@ -1,59 +1,141 @@
-body{
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #4b1c71, #fff0ff);
+    background: #D6CDD6;
     min-height: 100vh;
     color: #333;
-    color: whitesmoke
+    color: whitesmoke;
+    flex-wrap: wrap;
 
 }
 
-h1{
+
+
+.banner {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 18%;
+    background-color: #5C3671;
+}
+
+.options,
+nav {
+    box-sizing: border-box;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+nav,
+.option3 {
+    box-sizing: border-box;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav,
+.option3,
+.option2 {
+    margin: 0 1rem;
+}
+
+h1 {
     margin-left: 5%;
     display: flex;
     box-sizing: border-box;
-    color: whitesmoke
-    
+    color: #FCF2FC;
+}
+
+.pepo {
+    display: flex;
+    padding-top: 5%;
+    padding-bottom: 4%;
+}
+
+.ayuda {
+    display: flex;
+    padding-bottom: 5%;
+}
+
+.hijo {
+
+    padding-top: 2%;
+    margin: 0;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    padding-left: 5%;
+    justify-content: space-between;
+
 }
 
 
+.card5 {
+
+    width: 600PX;
+    color: black;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: start;
+    line-height: 1.5;
+
+}
 
 
-.padre{
+.btn1 {
     display: flex;
     justify-content: center;
-    color: black;
-padding-top: 2%;
+    align-items: center;
+    gap: 5%;
 }
 
-.card0{
-    border: dashed;
-    background-color: whitesmoke;
-    border-radius: 10px;
-    width: 50%;
-    max-width: 100%;
-padding-left: 1%;
+.lap {
+    border-radius: 21px;
+    background: #9A6ABD;
+    box-shadow: inset 15px 15px 29px #5f4275,
+                inset -15px -15px 29px #d592ff;
+text-decoration: none;
+width: 40%;
+text-align: center;
+color: #e0e0e0;
 }
-
 
 
 .madre {
     display: flex;
-    justify-content: center; /* Centra la tarjeta en el contenedor madre */
-    align-items: center;
-    height: 100vh; /* Hace que el contenedor ocupe el alto total de la ventana */
-color: black;
+    justify-content: right;
+    align-items: top;
+    padding-right: 20%;
+    padding-left: 10%;
+    padding-top: 2.9%;
+    height: 36vh;
+    color: black;
+
+
 }
 
 .card1 {
+    box-sizing: border-box;
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%; /* Hace que sea responsive */
+    width: 300%;
     text-align: center;
+
 }
 
 .flex-between {
@@ -73,43 +155,127 @@ color: black;
 .progress-bar {
     height: 100%;
     background-color: #76c7c0;
-    width: 0%; /* Inicia en 0%, y se llenará con el JS */
+    width: 0%;
     transition: width 0.5s ease;
 }
 
 
-.grid{
-padding-top: 4%;
-margin: 0;
-box-sizing: border-box;
-display: flex;
-justify-content: center;
-gap: 2%;
+
+
+
+
+.pechi {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding-top: 12%;
+    padding-left: 5%;
+    color: #FCF2FC;
+    gap: 10%;
+    flex-wrap: wrap;
+    height: 100%;
+
 }
 
-.card{
-width: 480px;
+.infop {
+    box-sizing: border-box;
+    background-color: #9A6ABD;
+    width: 46%;
+    height: 23%;
+    border-radius: 10px;
+    padding-left: 1%;
+    line-height: 1.5;
+    background: linear-gradient(145deg, #a571ca, #8b5faa);
+    box-shadow: 11px 11px 22px #583c6c,
+        -11px -11px 22px #dc98ff;
+
+    flex-wrap: wrap;
+
+}
+
+
+.kid {
+    flex-wrap: wrap;
+    display: inline-block;
+    box-sizing: border-box;
+    position: absolute;
+    left: 55%;
+    top: 30%;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, .8));
+
+}
+
+.kid2 {
+    flex-wrap: wrap;
+    display: flex;
+    width: 76%;
+}
+
+.fra {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* Centra la imagen y el texto */
+    max-width: 100%;
+    /* Asegura que el contenedor sea responsive */
+    margin: auto;
+}
+
+.pji {
+
+    background-color: #4B1B72;
+    height: 65vh;
+    display: flex;
+
+}
+
+
+.padre {
+
+    gap: 5%;
+    box-sizing: border-box;
+    display: flex;
+    padding-top: 7%;
+    margin-left: 5%;
     color: black;
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    text-align: center;
+}
+
+.card0 {
+    border: dashed;
+    background-color: #D6CDD6;
+    border-radius: 10px;
+    width: 50%;
+height: 77%;
+
+    max-width: 100%;
+    padding-left: 1%;
 }
 
 
-.hijo{
+.cechi{
+    background-color: #D6CDD6;
+    border-radius: 10px;
+    width: 40%;
+height: 55%;
+    padding-left: 1%;
+}
 
-    padding-top: 4%;
+
+
+
+.grid {
+    padding-top: 1%;
     margin: 0;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
+    gap: 2%;
+    flex-wrap: wrap;
+
 }
 
-
-.card5{
+.card {
+    flex-wrap: wrap;
 
     width: 480px;
     color: black;
@@ -119,4 +285,74 @@ width: 480px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     max-width: 400px;
     text-align: center;
+}
+
+
+
+
+.pie {
+
+    box-sizing: border-box;
+    padding-top: 5%
+}
+
+
+.card6 {
+    color: black;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 10%;
+    text-align: center;
+}
+
+
+.more {
+    width: 50%;
+    display: flex;
+    overflow: hidden;
+
+}
+
+
+
+
+
+.testi{
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+}
+
+
+.c30{
+
+    background-color: #fff;
+    box-sizing: border-box;
+    width: 50%;
+    height: 50vh;
+    color: black;
+}
+
+
+
+
+
+
+
+
+footer {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #4b1c71;
+    width: 100%;
+    height: 10vh;
+
 }

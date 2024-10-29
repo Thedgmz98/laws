@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() { 
     const progressBar = document.getElementById('progress');
     const percentageText = document.getElementById('percentage');
-    const targetWidth = 40.82; 
+    const targetWidth = 11.82; 
     let currentWidth = 0;
     
     function animateProgressBar() {
@@ -31,12 +31,10 @@ document.querySelectorAll('.options a').forEach((anchor, index) => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
 
-        // Asociar cada enlace de la barra de navegación con la clase de su sección correspondiente
         const sectionClasses = ['banner', 'pepo', 'madre', 'testi' ,'padre'];
         const targetClass = sectionClasses[index];
         const targetSection = document.querySelector(`.${targetClass}`);
 
-        // Verificar si la sección existe y desplazar suavemente
         if (targetSection) {
             window.scrollTo({
                 top: targetSection.offsetTop,

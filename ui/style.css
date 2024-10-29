@@ -431,28 +431,116 @@ footer {
 
 
 
-@media (max-width: 1024px) {
+
+@media (min-width: 1600px) {
     .banner {
-        height: 15vh;
+        height: 20vh;
+    }
+    
+    h1 {
+        font-size: 2.2rem;
+        margin-left: 5%;
     }
 
-    .card5 {
-        width: 100%;
+    .card5, .card1, .card, .card6 {
+        max-width: 40%;
     }
 
     .btn1 {
-        flex-direction: column;
+        gap: 15px;
+    }
+
+    .lap {
+        width: 50%;
+        font-size: 1.2rem;
+    }
+
+    footer {
+        height: 8vh;
+    }
+}
+
+/* Laptops de 14 a 15 pulgadas (1366px a 1600px) */
+@media (min-width: 1366px) and (max-width: 1599px) {
+    .banner {
+        height: 18vh;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-left: 4%;
+    }
+
+    .card5, .card1, .card, .card6 {
+        max-width: 60%;
+    }
+
+    .btn1 {
+        gap: 10px;
     }
 
     .lap {
         width: 60%;
+        font-size: 1.1rem;
+    }
+
+    footer {
+        height: 10vh;
     }
 }
 
-@media (max-width: 768px) {
+/* Laptops de 13 pulgadas (1280px a 1365px) */
+@media (min-width: 1280px) and (max-width: 1365px) {
+    .banner {
+        height: 16vh;
+    }
+
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         margin-left: 3%;
+    }
+
+    .card5, .card1, .card, .card6 {
+        max-width: 70%;
+    }
+
+    .btn1 {
+        gap: 8px;
+    }
+
+    .lap {
+        width: 70%;
+        font-size: 1rem;
+    }
+
+    footer {
+        height: 12vh;
+    }
+}
+
+/* Tablets y pantallas pequeñas (768px a 1279px) */
+@media (min-width: 768px) and (max-width: 1279px) {
+    .banner {
+        height: 15vh;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+        margin-left: 2%;
+    }
+
+    .card5, .card1, .card, .card6 {
+        max-width: 90%;
+    }
+
+    .btn1 {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .lap {
+        width: 80%;
+        font-size: 0.9rem;
     }
 
     .madre {
@@ -461,45 +549,70 @@ footer {
         padding: 5%;
     }
 
-    .pechi, .pepo, .ayuda {
-        flex-direction: column;
-        padding: 0;
-        align-items: center;
-    }
-
-    .grid {
-        gap: 1%;
-    }
-
-    .card, .card1, .card5, .card6 {
-        width: 90%;
-    }
-}
-
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.2rem;
-    }
-
-    .lap {
-        width: 80%;
-        font-size: 0.9rem;
-    }
-
-    .card, .card1, .card5, .card6 {
-        width: 100%;
-    }
-
-    .madre, .btn1, .testi, .cnt {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .progress-bar {
         height: 15px;
     }
 
     footer {
         height: 15vh;
+    }
+}
+
+/* Dispositivos móviles (480px a 767px) */
+@media (max-width: 767px) {
+    .banner {
+        height: 12vh;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    .card5, .card1, .card, .card6 {
+        width: 100%;
+    }
+
+    .lap {
+        width: 90%;
+        font-size: 0.8rem;
+    }
+
+    .btn1, .madre, .grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        height: 15vh;
+    }
+}
+
+/* Dispositivos muy pequeños (< 480px) */
+@media (max-width: 480px) {
+    .banner {
+        height: 10vh;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+        margin-left: 2%;
+    }
+
+    .card5, .card1, .card, .card6 {
+        width: 100%;
+    }
+
+    .lap {
+        width: 100%;
+        font-size: 0.7rem;
+    }
+
+    .madre, .btn1, .grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        height: 20vh;
     }
 }
